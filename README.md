@@ -43,3 +43,36 @@ db.add('NAME', 'VALUE', { encrypt: true }, () => {
 db.add('NAME', 'VALUE', {}, () => {
 })
 ```
+# Get method
+
+Get is very simple
+
+```
+db.get('NAME', value => {
+  console.log(value)
+})
+```
+# Delete method
+
+Delete method is also simple
+
+```
+// With callback
+db.delete('NAME', () => {
+})
+
+// Without callback
+db.delete('NAME')
+```
+# Compare method
+
+This is only used if you are using `bcrypt`
+
+`NAME`: Name of item in the database
+`VALUE`: What you want to compare
+
+```
+db.compare('NAME', 'VALUE', vaild => {
+  console.log(value)
+})
+```
