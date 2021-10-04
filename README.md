@@ -73,6 +73,8 @@ This is only used if you are using `bcrypt`
 
 ```
 db.compare('NAME', 'VALUE', vaild => {
-  console.log(value)
+  console.log(valid)
 })
 ```
+
+# Goto example.md for examples
