@@ -68,8 +68,8 @@ db.delete('NAME')
 
 This is only used if you are using `bcrypt`
 
-`NAME`: Name of item in the database
-`VALUE`: What you want to compare
+`NAME`: Name of item in the database.
+`VALUE`: What you want to compare.
 
 ```
 db.compare('NAME', 'VALUE', vaild => {
